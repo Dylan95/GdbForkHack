@@ -9,7 +9,9 @@ Debugging with this limitation is extremely difficult.  I noticed this problem a
 
 platforms: Linux, probably most other *nix
 
-build: ./build.sh
+build: 
+	first "chmod +x ./build.sh" and "chmod +x ./clean.sh"
+	./build.sh
 
 install/use: 
 	source gdbinit_fork_hack.py somewhere in a command defined in your to .gdbinit, for example:
